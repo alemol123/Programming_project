@@ -10,6 +10,8 @@
  */
 
 #include "ui_sdl.h"
+#include "game.h"
+#include "input.h"
 #include <SDL2/SDL.h>
 
 /**
@@ -53,7 +55,7 @@ int ui_init(UIContext *ui)
  * @param game Pointer to the current GameState.
  * @param input Pointer to the current user input state.
  */
-void ui_render_game(UIContext *ui, GameState *game, CurrentInput *input)
+void ui_render_game(UIContext *ui, struct GameState *game, struct CurrentInput *input)
 {
     /* TODO:
      *  - Use SDL_SetRenderDrawColor and SDL_RenderClear.
@@ -79,7 +81,7 @@ void ui_render_game(UIContext *ui, GameState *game, CurrentInput *input)
  * @param ui Pointer to UIContext.
  * @param game Pointer to the final GameState.
  */
-void ui_render_results(UIContext *ui, GameState *game)
+void ui_render_results(UIContext *ui, struct GameState *game)
 {
     /* TODO:
      *  - Clear the screen.
