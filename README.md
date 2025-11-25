@@ -12,7 +12,7 @@ Run the program:
     ./typing_race
 
 At the moment, the .c files only contain skeleton comments and no logic.
-You will implement the game in the src/ files.
+We will implement the game in the src/ files.
 
 SDL2 note:
 - On macOS with Homebrew you may need to install SDL2 via:
