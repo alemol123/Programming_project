@@ -219,8 +219,10 @@ CMakeFiles/programming_project.dir/src/ui_sdl.c.o: \
   /opt/homebrew/include/SDL2/SDL_version.h \
   /opt/homebrew/include/SDL2/SDL_locale.h \
   /opt/homebrew/include/SDL2/SDL_misc.h \
+  /opt/homebrew/include/SDL2/SDL_ttf.h \
+  /Users/lunalarcher/Programming_project/include/input.h \
   /Users/lunalarcher/Programming_project/include/game.h \
-  /Users/lunalarcher/Programming_project/include/word_list.h \
+  /Users/lunalarcher/Programming_project/include/stats.h \
   /Users/lunalarcher/Programming_project/include/timer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/sched.h \
@@ -228,5 +230,4 @@ CMakeFiles/programming_project.dir/src/ui_sdl.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h \
-  /Users/lunalarcher/Programming_project/include/stats.h \
-  /Users/lunalarcher/Programming_project/include/input.h
+  /Users/lunalarcher/Programming_project/include/word_list.h
