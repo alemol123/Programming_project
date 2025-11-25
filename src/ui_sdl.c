@@ -1,9 +1,118 @@
+// ui_sdl.c
 #include "ui_sdl.h"
 #include "game.h"
 #include "input.h"
+
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdio.h>
+#include <math.h>
+
+// --------------- internal helpers -----------------
+
+void ui_draw_text(UIContext *ui,
+                         const char *text,
+                         int x,
+                         int y,
+                         SDL_Color color)
+{
+    if (!text || text[0] == '\0') {
+        return;
+    }
+
+    SDL_Surface *surface = TTF_RenderText_Solid(ui->font, text, color);
+    if (!surface) {
+        fprintf(stderr, "TTF_RenderText_Solid Error: %s\n", TTF_GetError());
+        return;
+    }
+
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(ui->renderer, surface);
+    if (!texture) {
+        fprintf(stderr, "SDL_CreateTextureFromSurface Error: %s\n", SDL_GetError());
+        SDL_FreeSurface(surface);
+        return;
+    }
+
+    SDL_Rect dest;
+    dest.x = x;
+    dest.y = y;
+    dest.w = surface->w;
+    dest.h = surface->h;
+
+    SDL_RenderCopy(ui->renderer, texture, NULL, &dest);
+
+    SDL_FreeSurface(surface);
+    SDL_DestroyTexture(texture);
+}
+
+// center text horizontally on an 800-px wide window
+static void ui_draw_text_centered(UIContext *ui,
+                                  const char *text,
+                                  int y,
+                                  SDL_Color color)
+{
+    if (!text || text[0] == '\0') {
+        return;
+    }
+
+    int w = 0, h = 0;
+    if (TTF_SizeText(ui->font, text, &w, &h) != 0) {
+        w = 0;
+    }
+
+    int x = (800 - w) / 2;
+    ui_draw_text(ui, text, x, y, color);
+}
+
+// circular dot-style timer (no SDL2_gfx needed)
+static void ui_draw_timer_ring(UIContext *ui,
+                               int cx,
+                               int cy,
+                               int radius,
+                               int remaining,
+                               int duration)
+{
+    if (duration <= 0) {
+        return;
+    }
+
+    int segments = duration;
+    if (segments > 60) {
+        segments = 60;  // avoid too many dots
+    }
+
+    int i;
+    for (i = 0; i < segments; ++i) {
+        float t = 1.0f - ((float)i / (float)segments);
+        float angle = (float)(t * 2.0 * M_PI - M_PI / 2.0); // start at top
+        int px = cx + (int)(cos(angle) * radius);
+        int py = cy + (int)(sin(angle) * radius);
+
+        int active = (i < remaining);
+
+        if (active) {
+            SDL_SetRenderDrawColor(ui->renderer, 220, 0, 0, 255); // red
+        } else {
+            SDL_SetRenderDrawColor(ui->renderer, 200, 200, 200, 255); // light gray
+        }
+
+        SDL_Rect dot;
+        dot.x = px - 2;
+        dot.y = py - 2;
+        dot.w = 4;
+        dot.h = 4;
+        SDL_RenderFillRect(ui->renderer, &dot);
+    }
+
+    // timer text in the center
+    char buf[16];
+    SDL_Color red = {220, 0, 0, 255};
+    snprintf(buf, sizeof(buf), "%d", remaining);
+    ui_draw_text(ui, buf, cx - 15, cy - 25, red);
+    ui_draw_text(ui, "sec", cx - 18, cy + 2, red);
+}
+
+// --------------- public API -----------------------
 
 int ui_init(UIContext *ui)
 {
@@ -19,11 +128,11 @@ int ui_init(UIContext *ui)
     }
 
     ui->window = SDL_CreateWindow(
-        "Typing Race",               
-        SDL_WINDOWPOS_CENTERED,      
-        SDL_WINDOWPOS_CENTERED,      
-        800,                         
-        600,                         
+        "Typing Race",
+        SDL_WINDOWPOS_CENTERED,
+        SDL_WINDOWPOS_CENTERED,
+        800,
+        600,
         SDL_WINDOW_SHOWN
     );
 
@@ -43,7 +152,7 @@ int ui_init(UIContext *ui)
         return 0;
     }
 
-    // Load a font (make sure assets/Roboto-Regular.ttf exists)
+    // Use your condensed bold font
     ui->font = TTF_OpenFont("assets/Roboto_SemiCondensed-Black.ttf", 32);
     if (!ui->font) {
         fprintf(stderr, "TTF_OpenFont Error: %s\n", TTF_GetError());
@@ -54,107 +163,113 @@ int ui_init(UIContext *ui)
         return 0;
     }
 
-    return 1; // success
-}
-
-vvoid ui_draw_text(UIContext *ui, const char *text, int x, int y, SDL_Color color)
-{
-    if (!text || text[0] == '\0') return;
-
-    SDL_Surface *surface = TTF_RenderText_Solid(ui->font, text, color);
-    if (!surface) {
-        fprintf(stderr, "TTF_RenderText_Solid Error: %s\n", TTF_GetError());
-        return;
-    }
-
-    SDL_Texture *texture = SDL_CreateTextureFromSurface(ui->renderer, surface);
-    if (!texture) {
-        fprintf(stderr, "SDL_CreateTextureFromSurface Error: %s\n", SDL_GetError());
-        SDL_FreeSurface(surface);
-        return;
-    }
-
-    SDL_Rect dest = {x, y, surface->w, surface->h};
-    SDL_RenderCopy(ui->renderer, texture, NULL, &dest);
-
-    SDL_FreeSurface(surface);
-    SDL_DestroyTexture(texture);
-}
- SDL_DestroyTexture(texture);
+    return 1;
 }
 
 void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input)
 {
-    // New background color
-    SDL_SetRenderDrawColor(ui->renderer, 40, 40, 80, 255);  // dark blueish
+    // Background: #EDE8D0
+    SDL_SetRenderDrawColor(ui->renderer, 237, 232, 208, 255);
     SDL_RenderClear(ui->renderer);
 
-    // Define colors for different texts
-    SDL_Color gold   = {255, 215, 0, 255};    // Score
-    SDL_Color cyan   = {0, 255, 255, 255};    // Timer
-    SDL_Color green  = {144, 238, 144, 255};  // "Type the word:"
-    SDL_Color white  = {255, 255, 255, 255};  // Player input
-    SDL_Color magenta= {255, 105, 180, 255};  // Current word
+    SDL_Color black     = {0, 0, 0, 255};
+    SDL_Color lightGrey = {120, 120, 120, 255};
 
-    // --- Labels and texts ---
-    ui_draw_text(ui, "Type the word:", 50, 100, green);
-    ui_draw_text(ui, game->currentWord, 330, 100, magenta);
-    ui_draw_text(ui, "Your input:", 50, 200, white);
-    ui_draw_text(ui, input->buffer, 250, 200, white);
+    // ----- Score box (white with black border) -----
 
-    // --- Score ---
-    char scoreText[64];
-    snprintf(scoreText, sizeof(scoreText), "Score: %d", game->stats.correct);
-    ui_draw_text(ui, scoreText, 50, 20, gold);
+    SDL_Rect scoreBox;
+    scoreBox.x = 40;
+    scoreBox.y = 40;
+    scoreBox.w = 200;
+    scoreBox.h = 60;
 
-    // --- Timer ---
-    char timerText[64];
-    snprintf(timerText, sizeof(timerText), "Time: %d s", game->timer.remaining);
-    ui_draw_text(ui, timerText, 400, 20, cyan);
+    // fill
+    SDL_SetRenderDrawColor(ui->renderer, 255, 255, 255, 255);
+
+    SDL_RenderFillRect(ui->renderer, &scoreBox);
+    // border
+    SDL_SetRenderDrawColor(ui->renderer, 0, 0, 0, 255);
+    for (int i = 0; i < 4; i++) {  
+        SDL_Rect outline = {
+            scoreBox.x - i,
+            scoreBox.y - i,
+            scoreBox.w + i * 2,
+            scoreBox.h + i * 2
+        };
+        SDL_RenderDrawRect(ui->renderer, &outline);
+    }
+    ui_draw_text(ui, "Score:", scoreBox.x + 15, scoreBox.y + 15, black);
+
+    char scoreBuf[32];
+    snprintf(scoreBuf, sizeof(scoreBuf), "%d", game->stats.correct);
+    ui_draw_text(ui, scoreBuf, scoreBox.x + 120, scoreBox.y + 15, black);
+
+    // ----- Circular timer (top right) -----
+    ui_draw_timer_ring(ui,
+                       700,         // center x
+                       90,          // center y
+                       45,          // radius
+                       game->timer.remaining,
+                       game->timer.duration);
+
+    // ----- Centered "Write the word:" and word -----
+    ui_draw_text_centered(ui, "Write the word:", 210, black);
+    ui_draw_text_centered(ui, game->currentWord, 260, black);
+
+    // ----- Input label + user input (lighter) -----
+    ui_draw_text(ui, "Your input:", 80, 360, lightGrey);
+    ui_draw_text(ui, input->buffer, 240, 360, lightGrey);
 
     SDL_RenderPresent(ui->renderer);
 }
 
-void ui_render_results(UIContext *ui, struct GameState *game)
+void ui_render_game_over(UIContext *ui, struct GameState *game)
 {
-    SDL_SetRenderDrawColor(ui->renderer, 0, 200, 100, 255);
+    // Same background as game screen
+    SDL_SetRenderDrawColor(ui->renderer, 237, 232, 208, 255);
     SDL_RenderClear(ui->renderer);
 
-    ui_draw_text(ui, "Game Over!", 320, 250);
+    SDL_Color black = {0, 0, 0, 255};
+
+    ui_draw_text_centered(ui, "Game Over!", 180, black);
+
+    char finalScore[64];
+    snprintf(finalScore, sizeof(finalScore), "Final Score: %d", game->stats.correct);
+    ui_draw_text_centered(ui, finalScore, 230, black);
+
+    char accuracy[64];
+    snprintf(accuracy, sizeof(accuracy), "Accuracy: %.1f%%", game->stats.accuracy);
+    ui_draw_text_centered(ui, accuracy, 270, black);
+
+    ui_draw_text_centered(ui,
+                          "Press ENTER to Restart or ESC to Exit",
+                          340,
+                          black);
 
     SDL_RenderPresent(ui->renderer);
+}
+
+// If some code still calls ui_render_results, keep a simple wrapper.
+void ui_render_results(UIContext *ui, struct GameState *game)
+{
+    ui_render_game_over(ui, game);
 }
 
 void ui_cleanup(UIContext *ui)
 {
-    if (ui->font)
+    if (ui->font) {
         TTF_CloseFont(ui->font);
-    if (ui->renderer)
+        ui->font = NULL;
+    }
+    if (ui->renderer) {
         SDL_DestroyRenderer(ui->renderer);
-    if (ui->window)
+        ui->renderer = NULL;
+    }
+    if (ui->window) {
         SDL_DestroyWindow(ui->window);
+        ui->window = NULL;
+    }
+
     TTF_Quit();
     SDL_Quit();
-}
-void ui_render_game_over(UIContext *ui, struct GameState *game)
-{
-    SDL_Rect scoreBox = {40, 15, 150, 40};
-    SDL_SetRenderDrawColor(ui->renderer, 0, 0, 0, 100); // semi-transparent black
-    SDL_RenderFillRect(ui->renderer, &scoreBox);
-    SDL_RenderClear(ui->renderer);
-
-    char finalScore[64];
-    snprintf(finalScore, sizeof(finalScore), "Final Score: %d", game->stats.correct);
-
-    char accuracy[64];
-    snprintf(accuracy, sizeof(accuracy), "Accuracy: %.1f%%", game->stats.accuracy);
-
-    ui_draw_text(ui, "Game Over!", 300, 200);
-    ui_draw_text(ui, finalScore, 300, 250);
-    ui_draw_text(ui, accuracy, 300, 300);
-    ui_draw_text(ui, "Press ESC or Close Window to Exit", 180, 380);
-    ui_draw_text(ui, "Press ENTER to Restart or ESC to Exit", 150, 420);
-
-
-    SDL_RenderPresent(ui->renderer);
 }
