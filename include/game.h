@@ -1,19 +1,24 @@
 #ifndef GAME_H
 #define GAME_H
-#include "word_list.h"
-#include "timer.h"
+
+#include "input.h"      // Must come first
 #include "stats.h"
-#include "input.h"
-#include "ui_sdl.h"
-typedef struct {
-    WordList words;
-    Timer timer;
+#include "timer.h"
+#include "word_list.h"
+#include "ui_sdl.h"     // Must come after the full type definitions
+
+typedef struct GameState {
+    UIContext ui;
+    struct WordList *words;
+    CurrentInput input;
     Stats stats;
-    const char *current_word;
-    int is_running;
-    int quit;
+    Timer timer;
+    char currentWord[64];
+    int running;
 } GameState;
-void game_init(GameState *game, const char *filepath);
+
+int game_init(GameState *game, const char *words_path);
 void game_start(GameState *game);
-void game_reset(GameState *game);
+void game_cleanup(GameState *game);
+
 #endif

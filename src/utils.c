@@ -21,8 +21,8 @@
  */
 int utils_rand_int(int min, int max)
 {
-    /* TODO:
-     *  - Implement using rand() % ...
-     */
-    return 0;
+    if (max <= min)
+        return min;  // safety fallback for invalid range
+
+    return rand() % (max - min + 1) + min;
 }

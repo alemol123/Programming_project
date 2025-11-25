@@ -1,103 +1,120 @@
-/**
- * @file game.c
- * @brief High-level game control logic for the Typing Race game.
- *
- * This module coordinates:
- *  - Word list loading and random selection.
- *  - Timer setup and timer thread start.
- *  - Stats initialization and updates.
- *  - SDL2 / UI initialization and the main event loop.
- */
-
 #include "game.h"
-#include "utils.h"
+#include "word_list.h"
+#include "input.h"
+#include "stats.h"
+#include "timer.h"
+#include <SDL2/SDL.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include <pthread.h>
+#include <string.h>
 
-/**
- * @brief Initialize the GameState structure.
- *
- * Responsibilities:
- *  - Initialize the random seed (for random word selection).
- *  - Load the word list from the given file path into game->words.
- *  - Reset stats (score, counters, accuracy).
- *  - Initialize the timer with a default duration (or value passed from outside).
- *  - Set an initial current_word from the list.
- *  - Prepare any flags (is_running, quit) with default values.
- *
- * This function DOES NOT start the timer thread or SDL loop; it only prepares data.
- *
- * @param game Pointer to a GameState instance to initialize.
- * @param filepath Path to the word list file (e.g. "assets/words.txt").
- */
-void game_init(GameState *game, const char *filepath)
+int game_init(GameState *game, const char *words_path)
 {
-    /* TODO:
-     *  - Seed the random number generator.
-     *  - Load words with word_list_load(&game->words, filepath).
-     *  - Initialize and reset stats.
-     *  - Initialize timer with a chosen duration.
-     *  - Pick an initial random word for game->current_word.
-     *  - Set game->is_running = 0 and game->quit = 0 (or similar defaults).
-     */
+    if (!ui_init(&game->ui)) {
+        fprintf(stderr, "Failed to initialize UI.\n");
+        return 0;
+    }
+
+    // Load the word list
+    game->words = malloc(sizeof(WordList));
+    if (!word_list_load(game->words, words_path)) {
+        fprintf(stderr, "Error: Failed to load words from %s\n", words_path);
+        return 0;
+    }
+
+    // Initialize input, stats, and timer
+    input_reset(&game->input);
+    stats_reset(&game->stats);
+    timer_init(&game->timer, 60); // 60-second timer
+
+    // Pick the first random word
+    const char *first = word_list_get_random(game->words);
+    strncpy(game->currentWord, first, sizeof(game->currentWord) - 1);
+    game->currentWord[sizeof(game->currentWord) - 1] = '\0';
+
+    game->running = 1;
+    return 1;
 }
 
-/**
- * @brief Start the Typing Race game main loop.
- *
- * Responsibilities:
- *  - Initialize SDL2 and the UI (create window, renderer, etc.).
- *  - Start the timer thread so that the countdown runs in the background.
- *  - Enter the SDL event loop:
- *      * Poll events (keyboard input, quit events, etc.).
- *      * Forward keyboard events to the input module.
- *      * When the user validates a word (e.g. presses Enter), compare it against
- *        game->current_word and update stats (correct / total, score).
- *      * Choose a new random word when the user finishes one.
- *      * Re-render the UI each frame (current word, user input, time left, score).
- *  - Exit the loop when:
- *      * The timer reaches zero, or
- *      * The user requests to quit (e.g. closes the window).
- *  - Join the timer thread and clean up SDL resources.
- *
- * @param game Pointer to an initialized GameState.
- */
 void game_start(GameState *game)
 {
-    /* TODO:
-     *  - Create a UIContext instance and call ui_init().
-     *  - Start the timer thread using pthread_create().
-     *  - Create a CurrentInput instance to track what the user types.
-     *  - While the game is running:
-     *      · Poll SDL events.
-     *      · Pass keyboard events to input_handle_event().
-     *      · When the user finishes a word, update stats and pick a new one.
-     *      · Call ui_render_game(&ui, game, &input).
-     *  - After the loop, show final results via ui_render_results().
-     *  - Join the timer thread and call ui_cleanup().
-     */
+    SDL_Event e;
+    SDL_StartTextInput();
+
+    while (game->running) {
+        timer_update(&game->timer);
+
+        // Stop when time is up
+        if (!game->timer.running) {
+            game->running = 0;
+            break;
+        }
+
+        while (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT) {
+                game->running = 0;
+            } else if (e.type == SDL_KEYDOWN) {
+                if (e.key.keysym.sym == SDLK_ESCAPE) {
+                    game->running = 0;
+                } else if (e.key.keysym.sym == SDLK_RETURN) {
+                    // ✅ Submit the word on Enter
+                    if (input_check_word(&game->input, game->currentWord)) {
+                        game->stats.correct++;
+                        game->stats.score++; // only count correct words in score
+                    }
+
+                    game->stats.total++; // count all attempts
+                    stats_update_accuracy(&game->stats);
+
+                    // Get next word regardless of correctness
+                    const char *newWord = word_list_get_random(game->words);
+                    strncpy(game->currentWord, newWord, sizeof(game->currentWord) - 1);
+                    input_reset(&game->input);
+                }
+            } else {
+                input_handle_event(&game->input, &e);
+            }
+        }
+
+        ui_render_game(&game->ui, game, &game->input);
+        SDL_Delay(16); // ~60 FPS
+    }
+
+    // Game Over screen
+    ui_render_game_over(&game->ui, game);
+
+    // Wait for user action (ESC to exit, ENTER to restart)
+    int waiting = 1;
+    while (waiting) {
+        while (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT) {
+                waiting = 0;
+            } else if (e.type == SDL_KEYDOWN) {
+                if (e.key.keysym.sym == SDLK_ESCAPE) {
+                    waiting = 0;
+                } else if (e.key.keysym.sym == SDLK_RETURN) {
+                    // Restart
+                    input_reset(&game->input);
+                    stats_reset(&game->stats);
+                    timer_init(&game->timer, 60);
+                    const char *newWord = word_list_get_random(game->words);
+                    strncpy(game->currentWord, newWord, sizeof(game->currentWord) - 1);
+                    game->running = 1;
+                    waiting = 0;
+                    game_start(game); // restart recursively
+                    return;
+                }
+            }
+        }
+        SDL_Delay(100);
+    }
+
+    SDL_StopTextInput();
 }
 
-/**
- * @brief Reset the game state to start a new round without exiting the program.
- *
- * Responsibilities:
- *  - Reset stats (score, counters, accuracy) to zero.
- *  - Reset timer values (remaining time back to full duration).
- *  - Pick a new starting word.
- *  - Clear any flags related to game end (set is_running appropriately).
- *
- * This function is optional depending on whether you support restarting the game.
- *
- * @param game Pointer to GameState to reset.
- */
-void game_reset(GameState *game)
+void game_cleanup(GameState *game)
 {
-    /* TODO:
-     *  - Reset stats via stats_reset(&game->stats).
-     *  - Reset timer values.
-     *  - Pick a new current_word.
-     *  - Set flags such as is_running / quit to their default values.
-     */
+    word_list_free(game->words);
+    free(game->words);
+    ui_cleanup(&game->ui);
 }
