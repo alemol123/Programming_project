@@ -8,29 +8,46 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 set(INC_DIR ${CMAKE_SOURCE_DIR}/include)
 
-file(GLOB_RECURSE SRC_FILES
-    "${SRC_DIR}/*.c"
-)
-
+file(GLOB_RECURSE SRC_FILES "${SRC_DIR}/*.c")
 
 include_directories(${INC_DIR})
+
 # --- SDL2 setup ---
 find_path(SDL2_INCLUDE_DIR SDL2/SDL.h
-  PATHS /opt/homebrew/include/SDL2 /usr/local/include/SDL2
+  PATHS /opt/homebrew/include /opt/homebrew/include/SDL2 /usr/local/include /usr/local/include/SDL2
 )
 find_library(SDL2_LIBRARY SDL2
   PATHS /opt/homebrew/lib /usr/local/lib
 )
 if (NOT SDL2_INCLUDE_DIR OR NOT SDL2_LIBRARY)
-    message(FATAL_ERROR "SDL2 not found. Please install it with 'brew install sdl2'")
+  message(FATAL_ERROR "SDL2 not found. Please install with 'brew install sdl2'")
 endif()
-
 include_directories(${SDL2_INCLUDE_DIR})
 message(STATUS "Using SDL2 include dir: ${SDL2_INCLUDE_DIR}")
 message(STATUS "Using SDL2 library: ${SDL2_LIBRARY}")
 
+# --- SDL2_ttf setup ---
+find_path(SDL2_TTF_INCLUDE_DIR SDL_ttf.h
+  PATHS /opt/homebrew/include /opt/homebrew/include/SDL2 /usr/local/include /usr/local/include/SDL2
+)
+find_library(SDL2_TTF_LIBRARY SDL2_ttf
+  PATHS /opt/homebrew/lib /usr/local/lib
+)
+if (NOT SDL2_TTF_INCLUDE_DIR OR NOT SDL2_TTF_LIBRARY)
+  message(FATAL_ERROR "SDL2_ttf not found. Please install with 'brew install sdl2_ttf'")
+endif()
+include_directories(${SDL2_TTF_INCLUDE_DIR})
+message(STATUS "Using SDL2_ttf include dir: ${SDL2_TTF_INCLUDE_DIR}")
+message(STATUS "Using SDL2_ttf library: ${SDL2_TTF_LIBRARY}")
+
 # --- Define the executable target ---
 add_executable(programming_project ${SRC_FILES})
 
-# --- Link SDL2 library ---
-target_link_libraries(programming_project ${SDL2_LIBRARY})
+# --- Link SDL2 and SDL2_ttf libraries ---
+target_link_libraries(programming_project ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+
+# --- Copy assets after build ---
+add_custom_command(TARGET programming_project POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          ${CMAKE_SOURCE_DIR}/assets
+          $<TARGET_FILE_DIR:programming_project>/assets)

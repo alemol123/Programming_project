@@ -3,7 +3,6 @@
 #include <SDL2/SDL.h>
 
 
-
 typedef struct {
     char buffer[64];
     int length;
