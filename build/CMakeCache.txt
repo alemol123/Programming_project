@@ -131,7 +131,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Programming_project
+CMAKE_PROJECT_NAME:STATIC=programming_project
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=
@@ -214,25 +214,13 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Programming_project_BINARY_DIR:STATIC=/Users/alexandramolinsmacbook/Programming_project/build
+programming_project_BINARY_DIR:STATIC=/Users/alexandramolinsmacbook/Programming_project/build
 
 //Value Computed by CMake
-Programming_project_IS_TOP_LEVEL:STATIC=ON
+programming_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Programming_project_SOURCE_DIR:STATIC=/Users/alexandramolinsmacbook/Programming_project
-
-//Path to a file.
-SDL2_INCLUDE_DIR:PATH=/opt/homebrew/include
-
-//Path to a library.
-SDL2_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2.dylib
-
-//Path to a file.
-SDL2_TTF_INCLUDE_DIR:PATH=/opt/homebrew/include/SDL2
-
-//Path to a library.
-SDL2_TTF_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2_ttf.dylib
+programming_project_SOURCE_DIR:STATIC=/Users/alexandramolinsmacbook/Programming_project
 
 
 ########################
@@ -323,7 +311,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

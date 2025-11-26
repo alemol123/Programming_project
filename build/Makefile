@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/alexandramolinsmacbook/Programming_project/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -126,200 +136,8 @@ programming_project: cmake_check_build_system
 
 # fast build rule for target.
 programming_project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/programming_project.dir/build.make src/CMakeFiles/programming_project.dir/build
 .PHONY : programming_project/fast
-
-src/game.o: src/game.c.o
-.PHONY : src/game.o
-
-# target to build an object file
-src/game.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/game.c.o
-.PHONY : src/game.c.o
-
-src/game.i: src/game.c.i
-.PHONY : src/game.i
-
-# target to preprocess a source file
-src/game.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/game.c.i
-.PHONY : src/game.c.i
-
-src/game.s: src/game.c.s
-.PHONY : src/game.s
-
-# target to generate assembly for a file
-src/game.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/game.c.s
-.PHONY : src/game.c.s
-
-src/input.o: src/input.c.o
-.PHONY : src/input.o
-
-# target to build an object file
-src/input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/input.c.o
-.PHONY : src/input.c.o
-
-src/input.i: src/input.c.i
-.PHONY : src/input.i
-
-# target to preprocess a source file
-src/input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/input.c.i
-.PHONY : src/input.c.i
-
-src/input.s: src/input.c.s
-.PHONY : src/input.s
-
-# target to generate assembly for a file
-src/input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/input.c.s
-.PHONY : src/input.c.s
-
-src/main.o: src/main.c.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/main.c.o
-.PHONY : src/main.c.o
-
-src/main.i: src/main.c.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/main.c.s
-.PHONY : src/main.c.s
-
-src/stats.o: src/stats.c.o
-.PHONY : src/stats.o
-
-# target to build an object file
-src/stats.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/stats.c.o
-.PHONY : src/stats.c.o
-
-src/stats.i: src/stats.c.i
-.PHONY : src/stats.i
-
-# target to preprocess a source file
-src/stats.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/stats.c.i
-.PHONY : src/stats.c.i
-
-src/stats.s: src/stats.c.s
-.PHONY : src/stats.s
-
-# target to generate assembly for a file
-src/stats.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/stats.c.s
-.PHONY : src/stats.c.s
-
-src/timer.o: src/timer.c.o
-.PHONY : src/timer.o
-
-# target to build an object file
-src/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/timer.c.o
-.PHONY : src/timer.c.o
-
-src/timer.i: src/timer.c.i
-.PHONY : src/timer.i
-
-# target to preprocess a source file
-src/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/timer.c.i
-.PHONY : src/timer.c.i
-
-src/timer.s: src/timer.c.s
-.PHONY : src/timer.s
-
-# target to generate assembly for a file
-src/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/timer.c.s
-.PHONY : src/timer.c.s
-
-src/ui_sdl.o: src/ui_sdl.c.o
-.PHONY : src/ui_sdl.o
-
-# target to build an object file
-src/ui_sdl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/ui_sdl.c.o
-.PHONY : src/ui_sdl.c.o
-
-src/ui_sdl.i: src/ui_sdl.c.i
-.PHONY : src/ui_sdl.i
-
-# target to preprocess a source file
-src/ui_sdl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/ui_sdl.c.i
-.PHONY : src/ui_sdl.c.i
-
-src/ui_sdl.s: src/ui_sdl.c.s
-.PHONY : src/ui_sdl.s
-
-# target to generate assembly for a file
-src/ui_sdl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/ui_sdl.c.s
-.PHONY : src/ui_sdl.c.s
-
-src/utils.o: src/utils.c.o
-.PHONY : src/utils.o
-
-# target to build an object file
-src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/utils.c.o
-.PHONY : src/utils.c.o
-
-src/utils.i: src/utils.c.i
-.PHONY : src/utils.i
-
-# target to preprocess a source file
-src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/utils.c.i
-.PHONY : src/utils.c.i
-
-src/utils.s: src/utils.c.s
-.PHONY : src/utils.s
-
-# target to generate assembly for a file
-src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/utils.c.s
-.PHONY : src/utils.c.s
-
-src/word_list.o: src/word_list.c.o
-.PHONY : src/word_list.o
-
-# target to build an object file
-src/word_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/word_list.c.o
-.PHONY : src/word_list.c.o
-
-src/word_list.i: src/word_list.c.i
-.PHONY : src/word_list.i
-
-# target to preprocess a source file
-src/word_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/word_list.c.i
-.PHONY : src/word_list.c.i
-
-src/word_list.s: src/word_list.c.s
-.PHONY : src/word_list.s
-
-# target to generate assembly for a file
-src/word_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programming_project.dir/build.make CMakeFiles/programming_project.dir/src/word_list.c.s
-.PHONY : src/word_list.c.s
 
 # Help Target
 help:
@@ -329,31 +147,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... programming_project"
-	@echo "... src/game.o"
-	@echo "... src/game.i"
-	@echo "... src/game.s"
-	@echo "... src/input.o"
-	@echo "... src/input.i"
-	@echo "... src/input.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/stats.o"
-	@echo "... src/stats.i"
-	@echo "... src/stats.s"
-	@echo "... src/timer.o"
-	@echo "... src/timer.i"
-	@echo "... src/timer.s"
-	@echo "... src/ui_sdl.o"
-	@echo "... src/ui_sdl.i"
-	@echo "... src/ui_sdl.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
-	@echo "... src/word_list.o"
-	@echo "... src/word_list.i"
-	@echo "... src/word_list.s"
 .PHONY : help
 
 

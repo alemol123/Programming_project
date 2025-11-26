@@ -1,7 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/alexandramolinsmacbook/Programming_project/build/cmake_install.cmake"
+		"/Users/alexandramolinsmacbook/Programming_project/build/cmake_install.cmake",
+		"/Users/alexandramolinsmacbook/Programming_project/build/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

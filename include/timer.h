@@ -12,7 +12,7 @@ typedef struct {
 } Timer;
 
 void timer_init(Timer *t, int seconds);
-void timer_update(Timer *t);        // ✅ add this line
+void timer_update(Timer *t);        
 void *timer_thread_func(void *arg);
 
 #endif

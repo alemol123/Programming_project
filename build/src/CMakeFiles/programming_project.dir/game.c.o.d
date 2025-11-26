@@ -1,4 +1,4 @@
-CMakeFiles/programming_project.dir/src/game.c.o: \
+src/CMakeFiles/programming_project.dir/game.c.o: \
   /Users/alexandramolinsmacbook/Programming_project/src/game.c \
   /Users/alexandramolinsmacbook/Programming_project/include/game.h \
   /Users/alexandramolinsmacbook/Programming_project/include/input.h \
@@ -138,9 +138,11 @@ CMakeFiles/programming_project.dir/src/game.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_unreachable.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_header_macro.h \

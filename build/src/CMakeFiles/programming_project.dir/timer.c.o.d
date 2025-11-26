@@ -1,6 +1,6 @@
-CMakeFiles/programming_project.dir/src/ui_sdl.c.o: \
-  /Users/alexandramolinsmacbook/Programming_project/src/ui_sdl.c \
-  /Users/alexandramolinsmacbook/Programming_project/include/ui_sdl.h \
+src/CMakeFiles/programming_project.dir/timer.c.o: \
+  /Users/alexandramolinsmacbook/Programming_project/src/timer.c \
+  /Users/alexandramolinsmacbook/Programming_project/include/timer.h \
   /opt/homebrew/include/SDL2/SDL.h /opt/homebrew/include/SDL2/SDL_main.h \
   /opt/homebrew/include/SDL2/SDL_stdinc.h \
   /opt/homebrew/include/SDL2/SDL_config.h \
@@ -137,9 +137,11 @@ CMakeFiles/programming_project.dir/src/ui_sdl.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_unreachable.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_header_macro.h \
@@ -219,15 +221,9 @@ CMakeFiles/programming_project.dir/src/ui_sdl.c.o: \
   /opt/homebrew/include/SDL2/SDL_version.h \
   /opt/homebrew/include/SDL2/SDL_locale.h \
   /opt/homebrew/include/SDL2/SDL_misc.h \
-  /opt/homebrew/include/SDL2/SDL_ttf.h \
-  /Users/alexandramolinsmacbook/Programming_project/include/input.h \
-  /Users/alexandramolinsmacbook/Programming_project/include/game.h \
-  /Users/alexandramolinsmacbook/Programming_project/include/stats.h \
-  /Users/alexandramolinsmacbook/Programming_project/include/timer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h \
-  /Users/alexandramolinsmacbook/Programming_project/include/word_list.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h

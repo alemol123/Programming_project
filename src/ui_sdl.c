@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// --------------- internal helpers -----------------
 
 void ui_draw_text(UIContext *ui,
                          const char *text,
