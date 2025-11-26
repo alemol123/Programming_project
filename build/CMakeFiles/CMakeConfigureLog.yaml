@@ -4,7 +4,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -31,12 +33,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -44,6 +46,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -55,22 +59,22 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Darwin - 24.6.0 - arm64
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
@@ -88,6 +92,8 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -99,12 +105,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
       - "/opt/homebrew/bin/gmake"
       - "/opt/homebrew/sbin/gmake"
       - "/usr/local/bin/gmake"
@@ -116,11 +122,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
-      - "/Library/Apple/usr/bin/gmake"
-      - "/Users/lunalarcher/.local/bin/gmake"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/gmake"
-      - "/Users/lunalarcher/miniconda3/condabin/gmake"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Users/alexandramolinsmacbook/.local/bin/gmake"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/gmake"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/gmake"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
       - "/opt/homebrew/bin/make"
       - "/opt/homebrew/sbin/make"
       - "/usr/local/bin/make"
@@ -128,6 +134,8 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -139,16 +147,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
@@ -170,6 +178,8 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -181,12 +191,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/cc"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/cc"
       - "/opt/homebrew/bin/cc"
       - "/opt/homebrew/sbin/cc"
       - "/usr/local/bin/cc"
@@ -194,6 +204,8 @@ events:
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -205,19 +217,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -233,10 +245,12 @@ events:
     names:
       - "CMakeCCompilerId.c.in"
     candidate_directories:
-      - "/opt/homebrew/share/cmake/Modules/"
-    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/"
+    found: "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -248,17 +262,17 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -273,13 +287,13 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is AppleClang, found in:
-        /Users/lunalarcher/Programming_project/build/CMakeFiles/4.2.0/CompilerIdC/a.out
+        /Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/4.1.1/CompilerIdC/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Detecting C compiler apple sysroot: "/usr/bin/cc" "-E" "apple-sdk.c"
@@ -290,37 +304,37 @@ events:
         # 1 "<command line>" 1
         # 1 "<built-in>" 2
         # 1 "apple-sdk.c" 2
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
-        # 89 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
-        # 90 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
-        # 91 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 207 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
-        # 196 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
-        # 197 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
-        # 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
-        # 34 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
-        # 198 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
-        # 34 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 3 4
-        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
-        # 35 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 2 3 4
-        # 199 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
-        # 208 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
+        # 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 196 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 197 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 2 3 4
+        # 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
         # 2 "apple-sdk.c" 2
         
         
-      Found apple sysroot: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+      Found apple sysroot: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -337,6 +351,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -347,14 +363,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -366,16 +382,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -392,6 +408,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -402,14 +420,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -421,16 +439,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -447,6 +465,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -457,14 +477,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -476,16 +496,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -502,6 +522,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -512,14 +534,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -531,16 +553,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -557,6 +579,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -567,14 +591,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -586,16 +610,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -612,6 +636,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -622,14 +648,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -641,16 +667,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -667,6 +693,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -677,13 +705,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
       - "/usr/bin/objcopy"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/objcopy"
       - "/opt/homebrew/bin/objcopy"
       - "/opt/homebrew/sbin/objcopy"
       - "/usr/local/bin/objcopy"
@@ -694,14 +722,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
-      - "/Library/Apple/usr/bin/objcopy"
-      - "/Users/lunalarcher/.local/bin/objcopy"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/objcopy"
-      - "/Users/lunalarcher/miniconda3/condabin/objcopy"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+      - "/Users/alexandramolinsmacbook/.local/bin/objcopy"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/objcopy"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/objcopy"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -713,16 +741,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -739,6 +767,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -749,13 +779,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
       - "/usr/bin/readelf"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/readelf"
       - "/opt/homebrew/bin/readelf"
       - "/opt/homebrew/sbin/readelf"
       - "/usr/local/bin/readelf"
@@ -766,14 +796,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
-      - "/Library/Apple/usr/bin/readelf"
-      - "/Users/lunalarcher/.local/bin/readelf"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/readelf"
-      - "/Users/lunalarcher/miniconda3/condabin/readelf"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+      - "/Users/alexandramolinsmacbook/.local/bin/readelf"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/readelf"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/readelf"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -785,16 +815,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -811,6 +841,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -821,13 +853,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/opt/homebrew/sbin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -838,14 +870,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
-      - "/Library/Apple/usr/bin/dlltool"
-      - "/Users/lunalarcher/.local/bin/dlltool"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/dlltool"
-      - "/Users/lunalarcher/miniconda3/condabin/dlltool"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/Users/alexandramolinsmacbook/.local/bin/dlltool"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/dlltool"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -857,16 +889,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -883,6 +915,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -893,13 +927,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
       - "/usr/bin/addr2line"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/addr2line"
       - "/opt/homebrew/bin/addr2line"
       - "/opt/homebrew/sbin/addr2line"
       - "/usr/local/bin/addr2line"
@@ -910,14 +944,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
-      - "/Library/Apple/usr/bin/addr2line"
-      - "/Users/lunalarcher/.local/bin/addr2line"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/addr2line"
-      - "/Users/lunalarcher/miniconda3/condabin/addr2line"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
+      - "/Users/alexandramolinsmacbook/.local/bin/addr2line"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/addr2line"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/addr2line"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -929,16 +963,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -955,6 +989,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -965,13 +1001,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/opt/homebrew/sbin/tapi"
       - "/usr/local/bin/tapi"
@@ -982,14 +1018,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
-      - "/Library/Apple/usr/bin/tapi"
-      - "/Users/lunalarcher/.local/bin/tapi"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/tapi"
-      - "/Users/lunalarcher/miniconda3/condabin/tapi"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/Users/alexandramolinsmacbook/.local/bin/tapi"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/tapi"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1001,16 +1037,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:76 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/Platform/Darwin.cmake:76 (find_program)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_INSTALL_NAME_TOOL"
@@ -1026,6 +1062,8 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1037,12 +1075,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -1050,6 +1088,8 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1061,23 +1101,23 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI"
-      binary: "/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI"
+      source: "/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG"
+      binary: "/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1089,56 +1129,56 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI'
+        Change Dir: '/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_595fe/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_595fe.dir/build.make CMakeFiles/cmTC_595fe.dir/build
-        Building C object CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
-        Apple clang version 17.0.0 (clang-1700.0.13.3)
+        Run Build Command(s): /Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ec3a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ec3a.dir/build.make CMakeFiles/cmTC_4ec3a.dir/build
+        Building C object CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -c /Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
-        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 17.0.0 (clang-1700.0.13.3) default target arm64-apple-darwin24.6.0
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -x c /Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0
         ignoring nonexistent directory "/usr/local/include"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include
-         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+         /Library/Developer/CommandLineTools/usr/lib/clang/17/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_595fe
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_595fe.dir/link.txt --verbose=1
-        Apple clang version 17.0.0 (clang-1700.0.13.3)
+        Linking C executable cmTC_4ec3a
+        /Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ec3a.dir/link.txt --verbose=1
+        Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
-        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_595fe -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1167.4.1
-        BUILD 20:00:10 Mar 12 2025
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4ec3a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1167.5
+        BUILD 01:45:05 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
         will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
         LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.0.3.4)
+        TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.0.3.5)
         Library search paths:
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -o cmTC_595fe
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -o cmTC_4ec3a
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Effective list of requested architectures (possibly empty)  : ""
@@ -1146,118 +1186,118 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
-          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
         end of search list found
-        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
-        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/17/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/17/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI']
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_595fe/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_595fe.dir/build.make CMakeFiles/cmTC_595fe.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.3)]
+        ignore line: [Run Build Command(s): /Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ec3a/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ec3a.dir/build.make CMakeFiles/cmTC_4ec3a.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -c /Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/lunalarcher/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-mqQndI -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.3) default target arm64-apple-darwin24.6.0]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/CMakeScratch/TryCompile-nfKwnG -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -x c /Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_595fe]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_595fe.dir/link.txt --verbose=1]
-        ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.3)]
+        ignore line: [Linking C executable cmTC_4ec3a]
+        ignore line: [/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ec3a.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_595fe -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4ec3a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
-          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
           arg [-dynamic] ==> ignore
           arg [-arch] ==> ignore
           arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
           arg [15.0.0] ==> ignore
-          arg [15.4] ==> ignore
+          arg [15.5] ==> ignore
           arg [-syslibroot] ==> ignore
-          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_595fe] ==> ignore
+          arg [cmTC_4ec3a] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_595fe.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4ec3a.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
-          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
-        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         remove lib [System]
-        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
-        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
-        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
-        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         implicit libs: []
         implicit objs: []
-        implicit dirs: [/usr/local/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
-        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit dirs: [/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
-      @(#)PROGRAM:ld PROJECT:ld-1167.4.1
-      BUILD 20:00:10 Mar 12 2025
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1167.5
+      BUILD 01:45:05 Apr 30 2025
       configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
       will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
       LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
-      TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.0.3.4)
+      TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.0.3.5)
   -
     kind: "find-v1"
     backtrace:
@@ -1276,6 +1316,8 @@ events:
     names:
       - "SDL2/SDL.h"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1287,13 +1329,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/include/"
       - "/opt/homebrew/"
       - "/usr/local/include/"
@@ -1301,6 +1341,8 @@ events:
       - "/usr/include/"
       - "/usr/"
       - "/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -1312,12 +1354,11 @@ events:
       - "/opt/local/include/"
       - "/opt/local/"
       - "/usr/include/X11/"
-      - "/Users/lunalarcher/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
       - "/Library/Frameworks/"
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
@@ -1326,6 +1367,8 @@ events:
       - "/usr/local/include/"
       - "/usr/local/include/SDL2/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/SDL2.framework/Headers/SDL.h"
       - "/opt/homebrew/bin/SDL2.framework/Headers/SDL.h"
       - "/opt/homebrew/sbin/SDL2.framework/Headers/SDL.h"
       - "/usr/local/bin/SDL2.framework/Headers/SDL.h"
@@ -1337,13 +1380,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/SDL2.framework/Headers/SDL.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/SDL2.framework/Headers/SDL.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SDL2.framework/Headers/SDL.h"
-      - "/Library/Apple/usr/bin/SDL2.framework/Headers/SDL.h"
-      - "/Users/lunalarcher/.local/bin/SDL2.framework/Headers/SDL.h"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/SDL2.framework/Headers/SDL.h"
-      - "/Users/lunalarcher/miniconda3/condabin/SDL2.framework/Headers/SDL.h"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/.local/bin/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SDL2.framework/Headers/SDL.h"
       - "/opt/homebrew/include/SDL2.framework/Headers/SDL.h"
       - "/opt/homebrew/SDL2.framework/Headers/SDL.h"
       - "/usr/local/include/SDL2.framework/Headers/SDL.h"
@@ -1351,6 +1392,8 @@ events:
       - "/usr/include/SDL2.framework/Headers/SDL.h"
       - "/usr/SDL2.framework/Headers/SDL.h"
       - "/include/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/SDL2.framework/Headers/SDL.h"
       - "/usr/X11R6/include/SDL2.framework/Headers/SDL.h"
       - "/usr/X11R6/SDL2.framework/Headers/SDL.h"
       - "/usr/pkg/include/SDL2.framework/Headers/SDL.h"
@@ -1362,12 +1405,11 @@ events:
       - "/opt/local/include/SDL2.framework/Headers/SDL.h"
       - "/opt/local/SDL2.framework/Headers/SDL.h"
       - "/usr/include/X11/SDL2.framework/Headers/SDL.h"
-      - "/Users/lunalarcher/Library/Frameworks/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/SDL2.framework/Headers/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/SDL2.framework/Headers/SDL.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/SDL2.framework/Headers/SDL.h"
       - "/Library/Frameworks/SDL2.framework/Headers/SDL.h"
       - "/Network/Library/Frameworks/SDL2.framework/Headers/SDL.h"
       - "/System/Library/Frameworks/SDL2.framework/Headers/SDL.h"
@@ -1375,6 +1417,8 @@ events:
       - "/opt/homebrew/include/SDL2/SDL2.framework/Headers/SDL.h"
       - "/usr/local/include/SDL2.framework/Headers/SDL.h"
       - "/usr/local/include/SDL2/SDL2.framework/Headers/SDL.h"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL2/SDL.h"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/SDL2/SDL.h"
       - "/opt/homebrew/bin/SDL2/SDL.h"
       - "/opt/homebrew/sbin/SDL2/SDL.h"
       - "/usr/local/bin/SDL2/SDL.h"
@@ -1386,16 +1430,16 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/SDL2/SDL.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/SDL2/SDL.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SDL2/SDL.h"
-      - "/Library/Apple/usr/bin/SDL2/SDL.h"
-      - "/Users/lunalarcher/.local/bin/SDL2/SDL.h"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/SDL2/SDL.h"
-      - "/Users/lunalarcher/miniconda3/condabin/SDL2/SDL.h"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL2/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/SDL2/SDL.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/SDL2/SDL.h"
+      - "/Users/alexandramolinsmacbook/.local/bin/SDL2/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/SDL2/SDL.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/SDL2/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SDL2/SDL.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SDL2/SDL.h"
     found: "/opt/homebrew/include/"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1407,19 +1451,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/opt/homebrew"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1430,11 +1474,11 @@ events:
         - "/usr/include/X11"
       CMAKE_SYSTEM_FRAMEWORK_PATH:
         - "~/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
         - "/Library/Frameworks"
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
@@ -1456,6 +1500,8 @@ events:
     names:
       - "SDL2"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1464,25 +1510,27 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
       - "/opt/homebrew/"
       - "/usr/local/"
       - "/usr/lib/"
       - "/usr/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/lib/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
       - "/opt/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
       - "/opt/homebrew/lib/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1491,15 +1539,16 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
     found: "/opt/homebrew/lib/libSDL2.dylib"
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1511,19 +1560,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/opt/homebrew"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1534,11 +1583,11 @@ events:
         - "/usr/lib/X11"
       CMAKE_SYSTEM_FRAMEWORK_PATH:
         - "~/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
         - "/Library/Frameworks"
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
@@ -1560,6 +1609,8 @@ events:
     names:
       - "SDL_ttf.h"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1571,13 +1622,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/include/"
       - "/opt/homebrew/"
       - "/usr/local/include/"
@@ -1585,6 +1634,8 @@ events:
       - "/usr/include/"
       - "/usr/"
       - "/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
       - "/usr/X11R6/include/"
       - "/usr/X11R6/"
       - "/usr/pkg/include/"
@@ -1596,12 +1647,11 @@ events:
       - "/opt/local/include/"
       - "/opt/local/"
       - "/usr/include/X11/"
-      - "/Users/lunalarcher/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
       - "/Library/Frameworks/"
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
@@ -1610,6 +1660,8 @@ events:
       - "/usr/local/include/"
       - "/usr/local/include/SDL2/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/SDL_ttf.h"
       - "/opt/homebrew/bin/SDL_ttf.h"
       - "/opt/homebrew/sbin/SDL_ttf.h"
       - "/usr/local/bin/SDL_ttf.h"
@@ -1621,13 +1673,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/SDL_ttf.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/SDL_ttf.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SDL_ttf.h"
-      - "/Library/Apple/usr/bin/SDL_ttf.h"
-      - "/Users/lunalarcher/.local/bin/SDL_ttf.h"
-      - "/Users/lunalarcher/miniconda3/envs/project/bin/SDL_ttf.h"
-      - "/Users/lunalarcher/miniconda3/condabin/SDL_ttf.h"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/.local/bin/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SDL_ttf.h"
       - "/opt/homebrew/include/SDL_ttf.h"
       - "/opt/homebrew/SDL_ttf.h"
       - "/usr/local/include/SDL_ttf.h"
@@ -1635,6 +1685,8 @@ events:
       - "/usr/include/SDL_ttf.h"
       - "/usr/SDL_ttf.h"
       - "/include/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/SDL_ttf.h"
       - "/usr/X11R6/include/SDL_ttf.h"
       - "/usr/X11R6/SDL_ttf.h"
       - "/usr/pkg/include/SDL_ttf.h"
@@ -1646,19 +1698,23 @@ events:
       - "/opt/local/include/SDL_ttf.h"
       - "/opt/local/SDL_ttf.h"
       - "/usr/include/X11/SDL_ttf.h"
-      - "/Users/lunalarcher/Library/Frameworks/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/SDL_ttf.h"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/SDL_ttf.h"
       - "/Library/Frameworks/SDL_ttf.h"
       - "/Network/Library/Frameworks/SDL_ttf.h"
       - "/System/Library/Frameworks/SDL_ttf.h"
       - "/opt/homebrew/include/SDL_ttf.h"
-    found: "/opt/homebrew/include/SDL2/"
+      - "/opt/homebrew/include/SDL2/SDL_ttf.h"
+      - "/usr/local/include/SDL_ttf.h"
+      - "/usr/local/include/SDL2/SDL_ttf.h"
+    found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1670,19 +1726,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/opt/homebrew"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1693,11 +1749,11 @@ events:
         - "/usr/include/X11"
       CMAKE_SYSTEM_FRAMEWORK_PATH:
         - "~/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
         - "/Library/Frameworks"
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
@@ -1719,6 +1775,8 @@ events:
     names:
       - "SDL2_ttf"
     candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1727,25 +1785,27 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
       - "/opt/homebrew/"
       - "/usr/local/"
       - "/usr/lib/"
       - "/usr/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/lib/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
       - "/opt/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
-      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
       - "/opt/homebrew/lib/"
     searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1754,15 +1814,29 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/lunalarcher/.local/bin/"
-      - "/Users/lunalarcher/miniconda3/condabin/"
-      - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
-    found: "/opt/homebrew/lib/libSDL2_ttf.dylib"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/lib/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/opt/homebrew/lib/"
+    found: false
     search_context:
       ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1774,19 +1848,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/lunalarcher/.local/bin"
-        - "/Users/lunalarcher/miniconda3/envs/project/bin"
-        - "/Users/lunalarcher/miniconda3/condabin"
-        - "/Users/lunalarcher/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/opt/homebrew"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -1797,11 +1871,287 @@ events:
         - "/usr/lib/X11"
       CMAKE_SYSTEM_FRAMEWORK_PATH:
         - "~/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
-        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:30 (find_path)"
+    mode: "path"
+    variable: "SDL2_TTF_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SDL_ttf.h"
+    candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/include/SDL2/"
+      - "/usr/local/include/"
+      - "/usr/local/include/SDL2/"
+    searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/SDL_ttf.h"
+      - "/opt/homebrew/bin/SDL_ttf.h"
+      - "/opt/homebrew/sbin/SDL_ttf.h"
+      - "/usr/local/bin/SDL_ttf.h"
+      - "/System/Cryptexes/App/usr/bin/SDL_ttf.h"
+      - "/usr/bin/SDL_ttf.h"
+      - "/bin/SDL_ttf.h"
+      - "/usr/sbin/SDL_ttf.h"
+      - "/sbin/SDL_ttf.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/SDL_ttf.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/SDL_ttf.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/.local/bin/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SDL_ttf.h"
+      - "/opt/homebrew/include/SDL_ttf.h"
+      - "/opt/homebrew/SDL_ttf.h"
+      - "/usr/local/include/SDL_ttf.h"
+      - "/usr/local/SDL_ttf.h"
+      - "/usr/include/SDL_ttf.h"
+      - "/usr/SDL_ttf.h"
+      - "/include/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/include/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/SDL_ttf.h"
+      - "/usr/X11R6/include/SDL_ttf.h"
+      - "/usr/X11R6/SDL_ttf.h"
+      - "/usr/pkg/include/SDL_ttf.h"
+      - "/usr/pkg/SDL_ttf.h"
+      - "/opt/include/SDL_ttf.h"
+      - "/opt/SDL_ttf.h"
+      - "/sw/include/SDL_ttf.h"
+      - "/sw/SDL_ttf.h"
+      - "/opt/local/include/SDL_ttf.h"
+      - "/opt/local/SDL_ttf.h"
+      - "/usr/include/X11/SDL_ttf.h"
+      - "/Users/alexandramolinsmacbook/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/SDL_ttf.h"
+      - "/Library/Frameworks/SDL_ttf.h"
+      - "/Network/Library/Frameworks/SDL_ttf.h"
+      - "/System/Library/Frameworks/SDL_ttf.h"
+      - "/opt/homebrew/include/SDL_ttf.h"
+    found: "/opt/homebrew/include/SDL2/"
+    search_context:
+      ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:33 (find_library)"
+    mode: "library"
+    variable: "SDL2_TTF_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SDL2_ttf"
+    candidate_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/lib/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/opt/homebrew/lib/"
+    searched_directories:
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Users/alexandramolinsmacbook/.local/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin/"
+      - "/Users/alexandramolinsmacbook/miniforge3/condabin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+    found: "/opt/homebrew/lib/libSDL2_ttf.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/alexandramolinsmacbook/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/alexandramolinsmacbook/.local/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv/bin"
+        - "/Users/alexandramolinsmacbook/miniforge3/condabin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/Users/alexandramolinsmacbook/miniforge3/envs/myenv"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
         - "/Library/Frameworks"
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
