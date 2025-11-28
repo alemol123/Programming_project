@@ -9,10 +9,8 @@ add_executable(programming_project
     input.c 
 )
 
-target_link_libraries(programming_project
-    /opt/homebrew/opt/sdl2/lib/libSDL2.dylib
-    /opt/homebrew/opt/sdl2_ttf/lib/libSDL2_ttf.dylib
-
+find_package(SDL2 REQUIRED)
+target_link_libraries(programming_project SDL2::SDL2
 )
 
 

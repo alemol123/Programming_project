@@ -1,7 +1,0 @@
-/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/test.dir
-/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/edit_cache.dir
-/Users/alexandramolinsmacbook/Programming_project/build/CMakeFiles/rebuild_cache.dir
-/Users/alexandramolinsmacbook/Programming_project/build/src/CMakeFiles/programming_project.dir
-/Users/alexandramolinsmacbook/Programming_project/build/src/CMakeFiles/test.dir
-/Users/alexandramolinsmacbook/Programming_project/build/src/CMakeFiles/edit_cache.dir
-/Users/alexandramolinsmacbook/Programming_project/build/src/CMakeFiles/rebuild_cache.dir

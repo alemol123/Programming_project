@@ -11,6 +11,5 @@ endif()
 set(CMAKE_C_EXTENSIONS OFF)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
-include_directories(/opt/homebrew/include)
 enable_testing()
 add_subdirectory(src)
