@@ -1,4 +1,4 @@
-Typing Race Game (Skeleton)
+Typing Race Game 
 ================================
 
 This repository is a *skeleton* C project for a Typing Race game using SDL2.
