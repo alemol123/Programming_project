@@ -1,15 +1,20 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "input.h"      // Must come first
+#include <SDL2/SDL.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "word_list.h"
+#include "input.h"
 #include "stats.h"
 #include "timer.h"
-#include "word_list.h"
-#include "ui_sdl.h"     // Must come after the full type definitions
+#include "ui_sdl.h"   // <-- bring in UIContext definition
 
 typedef struct GameState {
-    UIContext ui;
-    struct WordList *words;
+    UIContext ui;          // full, known type now
+    WordList *words;
     CurrentInput input;
     Stats stats;
     Timer timer;

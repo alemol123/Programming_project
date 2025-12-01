@@ -8,11 +8,12 @@
 // Forward declarations for structures used but defined elsewhere
 struct GameState;    
 
-typedef struct {
+typedef struct UIContext {
     SDL_Window *window;
     SDL_Renderer *renderer;
     TTF_Font *font;
 } UIContext;
+
 
 // Function declarations
 int ui_init(UIContext *ui);
