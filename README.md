@@ -31,10 +31,10 @@ To build (if SDL2 and sdl2-config are installed):
 
 Run the tests: 
 
-    ./tests/test_words
-    ./tests/test_stats
-    ./tests/test_timer
-    ./tests/test_game_logic
+    .build/tests/test_words
+    .build/tests/test_stats
+    .build/tests/test_timer
+    .build/tests/test_game_logic
 
 Run the program:
 
