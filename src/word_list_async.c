@@ -4,9 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
- * @brief Background thread function that loads the word list.
- */
 static void *word_list_load_thread_func(void *arg)
 {
     WordListAsync *async = (WordListAsync *)arg;

@@ -1,5 +1,9 @@
 # CMake configuration inside src/ for building the typing game
 
+# Find required packages
+find_package(SDL2 REQUIRED)
+find_package(Threads REQUIRED)
+
 # List of source files (excluding main.c for library)
 set(SOURCES
     game.c
@@ -19,6 +23,12 @@ target_include_directories(programming_project_lib
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
 )
 
+# Link pthreads to library (required for timer multithreading)
+target_link_libraries(programming_project_lib
+    PRIVATE
+        Threads::Threads
+)
+
 # Create the executable (game)
 add_executable(programming_project main.c)
 
@@ -26,12 +36,6 @@ target_include_directories(programming_project
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
 )
-
-# Find SDL2
-find_package(SDL2 REQUIRED)
-
-# Find pthreads
-find_package(Threads REQUIRED)
 
 # Include SDL2 headers
 target_include_directories(programming_project

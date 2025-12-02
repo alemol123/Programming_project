@@ -3,11 +3,6 @@
 #include <unistd.h>    // usleep
 #include <stdio.h>
 
-/**
- * @brief Internal helper: update remaining time based on startTime and duration.
- *
- * Expects the caller to hold t->lock.
- */
 static void timer_update_locked(Timer *t)
 {
     Uint32 now = SDL_GetTicks();
@@ -23,13 +18,6 @@ static void timer_update_locked(Timer *t)
     }
 }
 
-/**
- * @brief Background worker thread.
- *
- * While not asked to quit:
- *  - If timer is running, update remaining time.
- *  - Sleep briefly to avoid busy-waiting.
- */
 void *timer_thread_func(void *arg)
 {
     Timer *t = (Timer *)arg;
@@ -64,6 +52,7 @@ void timer_init(Timer *t, int seconds)
     t->remaining = seconds;
     t->running   = 1;
     t->quit      = 0;
+    t->thread_created = 0;
     t->startTime = SDL_GetTicks();
 
     if (pthread_mutex_init(&t->lock, NULL) != 0) {
@@ -75,7 +64,11 @@ void timer_init(Timer *t, int seconds)
     if (pthread_create(&t->thread, NULL, timer_thread_func, t) != 0) {
         fprintf(stderr, "Failed to create timer thread.\n");
         t->running = 0;
+        pthread_mutex_destroy(&t->lock);
+        return;
     }
+
+    t->thread_created = 1;
 }
 
 void timer_restart(Timer *t, int seconds)
@@ -90,13 +83,14 @@ void timer_restart(Timer *t, int seconds)
 
 void timer_shutdown(Timer *t)
 {
-    pthread_mutex_lock(&t->lock);
-    t->quit = 1;
-    pthread_mutex_unlock(&t->lock);
+    if (t->thread_created) {
+        pthread_mutex_lock(&t->lock);
+        t->quit = 1;
+        pthread_mutex_unlock(&t->lock);
 
-    // Wait for the worker thread to exit
-    if (t->thread) {
+        // Wait for the worker thread to exit
         pthread_join(t->thread, NULL);
+        t->thread_created = 0;
     }
 
     pthread_mutex_destroy(&t->lock);
