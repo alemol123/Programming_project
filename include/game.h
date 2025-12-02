@@ -10,10 +10,10 @@
 #include "input.h"
 #include "stats.h"
 #include "timer.h"
-#include "ui_sdl.h"   // <-- bring in UIContext definition
+#include "ui_sdl.h"   
 
 typedef struct GameState {
-    UIContext ui;          // full, known type now
+    UIContext ui;          
     WordList *words;
     CurrentInput input;
     Stats stats;
@@ -22,6 +22,7 @@ typedef struct GameState {
     int running;
 } GameState;
 
+//function declarations
 int game_init(GameState *game, const char *words_path);
 void game_start(GameState *game);
 void game_cleanup(GameState *game);

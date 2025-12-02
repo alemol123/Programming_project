@@ -14,9 +14,8 @@ int main(void)
     }
 
     Timer t;
-    timer_init(&t, 2);   // 2-second timer
+    timer_init(&t, 2);   
 
-    // Basic invariants after init
     assert(t.duration == 2);
     assert(t.remaining == 2);
     assert(t.running == 1);

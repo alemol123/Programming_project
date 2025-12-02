@@ -1,4 +1,3 @@
-// ui_sdl.c
 #include "ui_sdl.h"
 #include "game.h"
 #include "input.h"
@@ -7,7 +6,6 @@
 #include <SDL2/SDL_ttf.h>
 #include <stdio.h>
 #include <math.h>
-
 
 void ui_draw_text(UIContext *ui,
                          const char *text,
@@ -44,7 +42,7 @@ void ui_draw_text(UIContext *ui,
     SDL_DestroyTexture(texture);
 }
 
-// center text horizontally on an 800-px wide window
+// center text horizontally on the window
 static void ui_draw_text_centered(UIContext *ui,
                                   const char *text,
                                   int y,
@@ -63,7 +61,7 @@ static void ui_draw_text_centered(UIContext *ui,
     ui_draw_text(ui, text, x, y, color);
 }
 
-// circular dot-style timer (no SDL2_gfx needed)
+// circular dot style timer
 static void ui_draw_timer_ring(UIContext *ui,
                                int cx,
                                int cy,
@@ -77,13 +75,13 @@ static void ui_draw_timer_ring(UIContext *ui,
 
     int segments = duration;
     if (segments > 60) {
-        segments = 60;  // avoid too many dots
+        segments = 60;  
     }
 
     int i;
     for (i = 0; i < segments; ++i) {
         float t = 1.0f - ((float)i / (float)segments);
-        float angle = (float)(t * 2.0 * M_PI - M_PI / 2.0); // start at top
+        float angle = (float)(t * 2.0 * M_PI - M_PI / 2.0); 
         int px = cx + (int)(cos(angle) * radius);
         int py = cy + (int)(sin(angle) * radius);
 
@@ -111,7 +109,7 @@ static void ui_draw_timer_ring(UIContext *ui,
     ui_draw_text(ui, "sec", cx - 18, cy + 2, red);
 }
 
-// --------------- public API -----------------------
+//public API
 
 int ui_init(UIContext *ui)
 {
@@ -151,7 +149,6 @@ int ui_init(UIContext *ui)
         return 0;
     }
 
-    // Use your condensed bold font
     ui->font = TTF_OpenFont("assets/Roboto_SemiCondensed-Black.ttf", 32);
     if (!ui->font) {
         fprintf(stderr, "TTF_OpenFont Error: %s\n", TTF_GetError());
@@ -167,14 +164,14 @@ int ui_init(UIContext *ui)
 
 void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input)
 {
-    // Background: #EDE8D0
+    
     SDL_SetRenderDrawColor(ui->renderer, 237, 232, 208, 255);
     SDL_RenderClear(ui->renderer);
 
     SDL_Color black     = {0, 0, 0, 255};
     SDL_Color lightGrey = {120, 120, 120, 255};
 
-    // ----- Score box (white with black border) -----
+    //Score box 
 
     SDL_Rect scoreBox;
     scoreBox.x = 40;
@@ -182,11 +179,8 @@ void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input)
     scoreBox.w = 200;
     scoreBox.h = 60;
 
-    // fill
     SDL_SetRenderDrawColor(ui->renderer, 255, 255, 255, 255);
-
     SDL_RenderFillRect(ui->renderer, &scoreBox);
-    // border
     SDL_SetRenderDrawColor(ui->renderer, 0, 0, 0, 255);
     for (int i = 0; i < 4; i++) {  
         SDL_Rect outline = {
@@ -203,7 +197,7 @@ void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input)
     snprintf(scoreBuf, sizeof(scoreBuf), "%d", game->stats.correct);
     ui_draw_text(ui, scoreBuf, scoreBox.x + 120, scoreBox.y + 15, black);
 
-    // ----- Circular timer (top right) -----
+    //Circular timer
     ui_draw_timer_ring(ui,
                        700,         // center x
                        90,          // center y
@@ -211,11 +205,11 @@ void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input)
                        game->timer.remaining,
                        game->timer.duration);
 
-    // ----- Centered "Write the word:" and word -----
+    // Centered "Write the word:"
     ui_draw_text_centered(ui, "Write the word:", 210, black);
     ui_draw_text_centered(ui, game->currentWord, 260, black);
 
-    // ----- Input label + user input (lighter) -----
+    //Input label + user input (lighter)
     ui_draw_text(ui, "Your input:", 80, 360, lightGrey);
     ui_draw_text(ui, input->buffer, 240, 360, lightGrey);
 
@@ -248,7 +242,6 @@ void ui_render_game_over(UIContext *ui, struct GameState *game)
     SDL_RenderPresent(ui->renderer);
 }
 
-// If some code still calls ui_render_results, keep a simple wrapper.
 void ui_render_results(UIContext *ui, struct GameState *game)
 {
     ui_render_game_over(ui, game);

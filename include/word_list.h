@@ -4,6 +4,8 @@ typedef struct {
     char **words;
     int count;
 } WordList;
+
+//function declarations
 int word_list_load(WordList *list, const char *filename);
 const char *word_list_get_random(WordList *list);
 void word_list_free(WordList *list);

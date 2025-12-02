@@ -8,6 +8,7 @@ typedef struct {
     int length;
 } CurrentInput;
 
+//function declarations
 void input_reset(CurrentInput *in);
 void input_handle_event(CurrentInput *in, SDL_Event *e);
 int input_check_word(CurrentInput *in, const char *target);

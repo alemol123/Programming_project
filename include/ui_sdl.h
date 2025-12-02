@@ -3,9 +3,8 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
-#include "input.h"   //  full definition for CurrentInput
+#include "input.h"   /
 
-// Forward declarations for structures used but defined elsewhere
 struct GameState;    
 
 typedef struct UIContext {
@@ -15,7 +14,7 @@ typedef struct UIContext {
 } UIContext;
 
 
-// Function declarations
+//function declarations
 int ui_init(UIContext *ui);
 void ui_render_game(UIContext *ui, struct GameState *game, CurrentInput *input);
 void ui_draw_text(UIContext *ui, const char *text, int x, int y, SDL_Color color);

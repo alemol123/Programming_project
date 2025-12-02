@@ -9,8 +9,8 @@ int main() {
     WordList list;
 
     int result = word_list_load(&list, "assets/words.txt");
-    assert(result > 0);          // SUCCESS means result = 1
-    assert(list.count > 0);      // Words were read
+    assert(result > 0);          // SUCCESS = 1
+    assert(list.count > 0);     
 
     const char *word = word_list_get_random(&list);
     assert(word != NULL);

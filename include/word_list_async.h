@@ -9,11 +9,12 @@ typedef struct {
     const char *filename;       // File to load from
     pthread_t load_thread;      // Background loading thread
     pthread_mutex_t lock;       // Protects loading state
-    int loading;                // 1 = still loading, 0 = done
-    int success;                // 1 = loaded successfully, 0 = failed
-    int quit;                   // 1 = cancel loading
+    int loading;                // 1 = loading, 0 = done
+    int success;                // 1 = successful load 0 = failed
+    int quit;                   
 } WordListAsync;
 
+//function declarations
 int word_list_async_start_load(WordListAsync *async, const char *filename);
 int word_list_async_is_ready(WordListAsync *async);
 int word_list_async_get_result(WordListAsync *async);

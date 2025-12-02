@@ -6,6 +6,8 @@ typedef struct {
     int total;
     float accuracy;
 } Stats;
+
+//function declarations
 void stats_reset(Stats *s);
 void stats_update_accuracy(Stats *s);
 #endif
