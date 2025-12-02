@@ -3,8 +3,8 @@ Typing Race Game
 
 This repository is a *skeleton* C project for a Typing Race game using SDL2.
 
-#**Prerequisites**
-
+Prerequisites
+================================
 Install the dependencies using conda:
 
     conda env create -f environment.yml
