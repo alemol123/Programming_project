@@ -18,6 +18,8 @@ https://github.com/conda-forge/miniforge
 
 You must activate the environment each time you open a new terminal.
 
+Build and Run 
+================================
 To build (if SDL2 and sdl2-config are installed):
 
     cd ~/Programming_project
