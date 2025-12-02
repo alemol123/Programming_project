@@ -15,7 +15,7 @@ To build (if SDL2 and sdl2-config are installed):
 
 Run the program:
 
-    ./build/src/programming_projec
+    ./build/src/programming_project
 
 At the moment, the .c files only contain skeleton comments and no logic.
 We will implement the game in the src/ files.
