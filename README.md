@@ -30,6 +30,7 @@ To build (if SDL2 and sdl2-config are installed):
     cmake --build .
 
 Run the tests: 
+
     ./tests/test_words
     ./tests/test_stats
     ./tests/test_timer
