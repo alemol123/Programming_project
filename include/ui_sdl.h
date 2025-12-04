@@ -3,9 +3,9 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
-#include "input.h"   /
+#include "input.h"
 
-struct GameState;    
+struct GameState;
 
 typedef struct UIContext {
     SDL_Window *window;
