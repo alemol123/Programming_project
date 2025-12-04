@@ -1,7 +1,7 @@
 Typing Race Game 
 ================================
 
-This repository is a *skeleton* C project for a Typing Race game using SDL2.
+This repository is a C project for a Typing Race game using SDL2.
 
 Prerequisites
 ================================
@@ -20,10 +20,8 @@ You must activate the environment each time you open a new terminal.
 
 Build and Run 
 ================================
-To build (if SDL2 and sdl2-config are installed):
+To build:
 
-    cd ~/Programming_project
-    rm -rf build
     mkdir build
     cd build
     cmake ..
@@ -31,19 +29,11 @@ To build (if SDL2 and sdl2-config are installed):
 
 Run the tests: 
 
-    .build/tests/test_words
-    .build/tests/test_stats
-    .build/tests/test_timer
-    .build/tests/test_game_logic
+    cd build
+    ctest
 
 Run the program:
 
     ./build/src/programming_project
 
 
-At the moment, the .c files only contain skeleton comments and no logic.
-We will implement the game in the src/ files.
-
-SDL2 note:
-- On macOS with Homebrew you may need to install SDL2 via:
-    brew install sdl2
